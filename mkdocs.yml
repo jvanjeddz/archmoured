@@ -1,0 +1,44 @@
+
+site_name: Archmoured
+
+nav:
+  - Pre-Install: index.md 
+  - Barebones: barebones.md
+  - Post-Install: post-install.md
+  - About: about.md
+
+theme:
+  palette: 
+    scheme: slate
+
+  logo: img/favicon.png
+  name: material
+
+  favicon: img/favicon.png
+  features:
+      - navigation.footer
+      - header.autohide
+      - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+
+copyright: Licensed under the GNU General Public License v3.0
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jvanjeddz/archmoured
+
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+

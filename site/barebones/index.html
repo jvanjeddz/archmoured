@@ -1,0 +1,1047 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../post-install/">
+      
+      
+      <link rel="icon" href="../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
+    
+    
+      
+        <title>Barebones - Archmoured</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#barebones" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Archmoured" class="md-header__button md-logo" aria-label="Archmoured" data-md-component="logo">
+      
+  <img src="../img/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Archmoured
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Barebones
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Archmoured" class="md-nav__button md-logo" aria-label="Archmoured" data-md-component="logo">
+      
+  <img src="../img/favicon.png" alt="logo">
+
+    </a>
+    Archmoured
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre-Install
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Barebones
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Barebones
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mirrors-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mirrors selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#essential-packages-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Essential packages installation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      System configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fstab" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fstab
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chroot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chroot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-zone" class="md-nav__link">
+    <span class="md-ellipsis">
+      TIme-zone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#localization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Localization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-persistent-keyboard-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      (Optional) Persistent keyboard layout
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initramfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initramfs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#password-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Password creation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      User creation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bootloader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bootloader
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bootloader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#systemd-boot-as-bootloader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Systemd-boot as bootloader
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reboot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reboot
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../post-install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Post-Install
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mirrors-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mirrors selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#essential-packages-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Essential packages installation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      System configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fstab" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fstab
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chroot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chroot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-zone" class="md-nav__link">
+    <span class="md-ellipsis">
+      TIme-zone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#localization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Localization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-persistent-keyboard-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      (Optional) Persistent keyboard layout
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initramfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initramfs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#password-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Password creation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      User creation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bootloader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bootloader
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bootloader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#systemd-boot-as-bootloader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Systemd-boot as bootloader
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reboot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reboot
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="barebones">Barebones</h1>
+<h2 id="installation">Installation</h2>
+<h3 id="mirrors-selection">Mirrors selection</h3>
+<p>Packages are downloaded from <a href="https://wiki.archlinux.org/title/Mirrors">mirror servers</a>.
+<a href="https://wiki.archlinux.org/title/Reflector">Reflector</a> updates the mirror list by 20 most 
+recently synchronized HTTPS mirrors and sorting them by download rate after connecting to the
+internet on the live system.</p>
+<p>The higher a mirror is placed on the list, the more priority it is given when downloading a package.
+Usually, the one generated on the live system is fine. If not, it may be 
+<a href="https://wiki.archlinux.org/title/Help:Reading#Append,_add,_create,_edit">edited</a>.</p>
+<h3 id="essential-packages-installation">Essential packages installation</h3>
+<p><a href="https://wiki.archlinux.org/title/Pacstrap">Pacstrap</a> is designed to create a new system installation from scratch.
+It is used to install specified packages into a given directory after setting up the mountpoints defined before
+(specifically into the root partition):</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pacstrap<span class="w"> </span>/mnt<span class="w"> </span>base<span class="w"> </span>base-devel<span class="w"> </span>linux<span class="w"> </span>linux-firmware<span class="w"> </span>btrfs-progs<span class="w"> </span>vim<span class="w"> </span>intel-ucode
+</span></code></pre></div>
+<ul>
+<li>
+<p><code>base</code>: Minimal package set to define a basic Arch Linux installation</p>
+</li>
+<li>
+<p><code>base-devel</code>: Basic tools to build Arch Linux packages. It is useful to compile packages from source. More of this after
+getting a solid system.</p>
+</li>
+<li>
+<p><code>linux</code>: <a href="https://wiki.archlinux.org/title/Kernel">The Linux kernel</a> and modules. There are various <a href="https://wiki.archlinux.org/title/Kernel#Officially_supported_kernels">alternative 
+Linux kernels</a> available for Arch Linux in addition 
+to the latest stable kernel. It is still suggested to use the vanilla one.</p>
+</li>
+<li>
+<p><code>linux-firmware</code>: Firmware files for Linux.</p>
+</li>
+<li>
+<p><code>btrfs-progs</code>: Btrfs filesystem utilities.</p>
+</li>
+<li>
+<p><code>intel-ucode</code>: <a href="https://wiki.archlinux.org/title/Microcode">Microcode</a> update files for Intel 
+CPUs. These provide bug fixes that can be critical to the stability of your system. All users with 
+an AMD or Intel CPU should install the microcode updates to ensure system stability.</p>
+</li>
+<li>
+<p><code>vim</code>: Vi Improved, a highly configurable, improved version of the vi text editor. More of this 
+program later on.</p>
+</li>
+</ul>
+<h2 id="system-configuration">System configuration</h2>
+<h3 id="fstab">Fstab</h3>
+<p>The <a href="https://wiki.archlinux.org/title/Fstab">fstab</a> file can be used to define how disk partitions, various other block 
+devices, or remote file systems should be mounted into the file system. A fstab file is generated with:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>genfstab<span class="w"> </span>-U<span class="w"> </span>/mnt<span class="w"> </span>&gt;&gt;<span class="w"> </span>/mnt/etc/fstab
+</span></code></pre></div>
+<p><img alt="Genfstab.png" src="../img/Genfstab.png" /></p>
+<h3 id="chroot">Chroot</h3>
+<p>A <a href="https://wiki.archlinux.org/title/Chroot">chroot</a> is an operation that changes the parent root directory 
+for the current running process and their children. The following command changes root into the new system:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>arch-chroot<span class="w"> </span>/mnt/
+</span></code></pre></div>
+<h3 id="time-zone">TIme-zone</h3>
+<p>By running the following command, an <code>/etc/localtime</code> symlink that points to a zoneinfo is created. If the user's
+time zone name is unknown, it is recommended to play around by looking at the zoneinfo directory content (e.g. 
+<code>ls /usr/share/zoneinfo/</code>) to see which option is best suited. Replacing Region and City is necessary:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ln<span class="w"> </span>-sf<span class="w"> </span>/usr/share/zoneinfo/Region/City<span class="w"> </span>/etc/localtime
+</span></code></pre></div>
+<p><a href="https://man.archlinux.org/man/hwclock.8">Hwclock</a> is an administration tool for the time clocks. The following command
+sets the Hardware Clock from the System Clock and updates the timestamps found in /etc/adjtime:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>hwclock<span class="w"> </span>--systohc
+</span></code></pre></div>
+<h3 id="localization">Localization</h3>
+<p>To make use of the English language in the system, <code>en_US.UTF-8 UTF-8</code> found in <code>/etc/locale.gen</code> must be uncommented:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>vim<span class="w"> </span>/etc/locale.gen
+</span></code></pre></div>
+<p>By using <a href="https://man.archlinux.org/man/echo.1">echo</a>, it is possible to edit/create a file without having to use a text editor. 
+This command creates a locale.conf file and sets the LANG variable to the same uncommented above:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">echo</span><span class="w"> </span><span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8<span class="w"> </span>&gt;<span class="w"> </span>/etc/locale.conf
+</span></code></pre></div>
+<p>The locales are generated by running:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>locale-gen
+</span></code></pre></div>
+<p><img alt="Localization.png" src="../img/Localization.png" /></p>
+<h3 id="optional-persistent-keyboard-layout">(Optional) Persistent keyboard layout</h3>
+<p>A persistent console keyboard layout can be specified by writing it on <code>/etc/vconsole.conf</code>. On the next
+example, the Latin American layout is chosen:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nb">echo</span><span class="w"> </span><span class="nv">KEYMAP</span><span class="o">=</span>la-latin1<span class="w"> </span>&gt;<span class="w"> </span>/etc/vconsole.conf
+</span></code></pre></div>
+<h3 id="network-configuration">Network configuration</h3>
+<p>The following command creates the hostname file an adds the system's hostname. 
+In this example, <code>myhost</code> is the hostname:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nb">echo</span><span class="w"> </span>myhost<span class="w"> </span>&gt;<span class="w"> </span>/etc/hostname
+</span></code></pre></div>
+<p><a href="https://man.archlinux.org/man/nss-myhostname.8">Nss-myhostname</a> provides localhost and the local hostname resolution to an 
+IP address. Still, some software may instead read <code>/etc/hosts</code> directly. To prevent such software from unsafely resolving 
+localhost over the network, entries for localhost are added. Resolving the local hostname is allowed by adding it too:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>vim<span class="w"> </span>/etc/hosts
+</span></code></pre></div>
+<p>The following text must be added to the file:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>127.0.0.1 localhost
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>::1 localhost
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>127.0.1.1 myhost.localdomain myhost
+</span></code></pre></div>
+<p><img alt="Etc_hosts.png" src="../img/Etc_hosts.png" /></p>
+<p>A configuration for a system with a permanent IP address or a domain name can be done too, but this won't be covered in this guide.</p>
+<h3 id="initramfs">Initramfs</h3>
+<p>The <code>mkinitcpio.conf</code> file must be edited, adding <code>btrfs</code> for it must be loaded before any boot hook.
+Inside <code>HOOKS</code>, <code>base udev systemd autodetect keyboard modconf block sd-encrypt filesystems</code> is added.</p>
+<ul>
+<li>
+<p><code>base</code>: provides crucial runtime necessities for booting.</p>
+</li>
+<li>
+<p><code>udev</code>: adds the udev daemon to the initramfs, allowing for dynamic loading of modules and reliable detection of 
+the root device via tags (UUID).</p>
+</li>
+<li>
+<p><code>systemd</code>: installs a basic systemd setup in the initramfs, and is meant to replace the <code>base</code>, <code>usr</code>, 
+<code>udev</code> and <code>resume</code> hooks. Other hooks with runtime components will need to be ported, and will not work 
+as intended. Including <code>base</code> hook before this one to ensure that a rescue shell exists on the initramfs is a good idea.</p>
+</li>
+<li>
+<p><code>autodetect</code>: shrinks the initramfs to a smaller size by autodetecting the needed
+modules.</p>
+</li>
+<li>
+<p><code>keyboard</code>: loads the necessary modules for keyboard devices.</p>
+</li>
+<li>
+<p><code>modconf</code>: installs modprobe configuration files from /etc/modprobe.d and
+/usr/lib/modprobe.d.</p>
+</li>
+<li>
+<p><code>block</code>: loads the necessary modules for most block devices using pata, sata,
+scsi, firewire, usb, or mmc.</p>
+</li>
+<li>
+<p><code>sd-encrypt</code>: allows for an encrypted root device with systemd initramfs.</p>
+</li>
+<li>
+<p><code>filesystems</code>: adds filesystems modules to the image.</p>
+</li>
+</ul>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>vim<span class="w"> </span>/etc/mkinitcpio.conf
+</span></code></pre></div>
+<p><img alt="Mkinitcpio_config.png" src="../img/Mkinitcpio_config.png" /></p>
+<p>The initramfs image is recreated:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>mkinitcpio<span class="w"> </span>-P
+</span></code></pre></div>
+<p><img alt="Mkinitcpio_allpresets.png" src="../img/Mkinitcpio_allpresets.png" /></p>
+<h3 id="password-creation">Password creation</h3>
+<p>A root password is set:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>passwd
+</span></code></pre></div>
+<h3 id="user-creation">User creation</h3>
+<p>With the following command, an user and the respective home directory is created. This user is wheel member.
+Wheel is the administration group, commonly used to give privileges to perform administrative actions. Even
+though it isn't the default, it can also be used to give access to the <a href="https://wiki.archlinux.org/title/Sudo">sudo</a> 
+and <a href="https://wiki.archlinux.org/title/Su">su</a> utilities. In the following example, <code>username</code> is the user's name:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>useradd<span class="w"> </span>-m<span class="w"> </span>-G<span class="w"> </span>wheel<span class="w"> </span>username
+</span></code></pre></div>
+<p>The configuration for sudo is found in <code>/etc/sudoers</code>. It must be edited by using <a href="https://man.archlinux.org/man/visudo.8">visudo</a>.
+Visudo locks the sudoers file against multiple simultaneous edits, performs basic validity checks, and checks for syntax errors before installing the edited file. This prevents any error that could make of sudo inoperable.</p>
+<p>The default editor for visudo is vi. To establish vim as the visudo editor for the duration of the current shell session, <code>EDITOR=vim</code> is written before visudo:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="w"> </span><span class="nv">EDITOR</span><span class="o">=</span>vim<span class="w"> </span>visudo
+</span></code></pre></div>
+<p><code>%wheel ALL=(ALL) ALL</code> is uncommented to allow members of group wheel to execute any command:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>%wheel<span class="w"> </span><span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">)</span><span class="w"> </span>ALL
+</span></code></pre></div>
+<p>It is highly advised to set a password for the created user:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>passwd<span class="w"> </span>username
+</span></code></pre></div>
+<p><img alt="User_creation.png" src="../img/User_creation.png" /></p>
+<p>Using pacman, the following packages are installed:</p>
+<ul>
+<li>
+<p><code>linux-headers</code>: Headers and scripts for building modules for the Linux kernel.</p>
+</li>
+<li>
+<p><code>networkmanager</code>: Network connection manager and user applications.</p>
+</li>
+<li>
+<p><code>dialog</code>: A tool to display dialog boxes from shell scripts.</p>
+</li>
+<li>
+<p><code>wpa_supplicant</code>: A utility providing key negotiation for WPA wireless networks.</p>
+</li>
+<li>
+<p><code>mtools</code>: A collection of utilities to access MS-DOS disks</p>
+</li>
+<li>
+<p><code>dosfstools</code>: DOS filesystem utilities.</p>
+</li>
+<li>
+<p><code>git</code>: The fast distributed version control system.</p>
+</li>
+<li>
+<p><code>xdg-utils</code>: Command line tools that assist applications with a variety of desktop integration tasks.</p>
+</li>
+<li>
+<p><code>xdg-user-dirs</code>: Manages user directories like <code>~/Desktop</code> and <code>~/Music</code>.</p>
+</li>
+</ul>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>pacman<span class="w"> </span>-S<span class="w"> </span>linux-headers<span class="w"> </span>networkmanager<span class="w"> </span>dialog<span class="w"> </span>wpa_supplicant<span class="w"> </span>mtools<span class="w"> </span>dosfstools<span class="w"> </span>git<span class="w"> </span>xdg-utils<span class="w"> </span>xdg-user-dirs
+</span></code></pre></div>
+<p>The main command used to introspect and control systemd is <a href="https://man.archlinux.org/man/systemctl.1">systemctl</a>. 
+Some of its uses are examining the system state and managing the system and services. The following command enables
+NetworkManager to start automatically at boot:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>NetworkManager
+</span></code></pre></div>
+<p><img alt="Enable_nm.png" src="../img/Enable_nm.png" /></p>
+<h2 id="bootloader">Bootloader</h2>
+<h3 id="systemd-boot-as-bootloader">Systemd-boot as bootloader</h3>
+<p>A <a href="https://wiki.archlinux.org/title/Arch_boot_process#Boot_loader">bootloader</a> is a piece of software 
+started by the firmware. It is responsible for loading the kernel with the wanted kernel parameters 
+and any external initramfs images.</p>
+<p>This guide uses <a href="https://wiki.archlinux.org/title/Systemd-boot">Systemd-boot</a>. It is a pretty straight-forward
+boot manager. It is already included with Arch's <a href="https://wiki.archlinux.org/title/Init">init</a> system, 
+<a href="https://wiki.archlinux.org/title/Systemd">Systemd</a>. </p>
+<p><a href="https://man.archlinux.org/man/bootctl.1">Bootctl</a> is used to install systemd-boot to the EFI 
+System Partition's (ESP) mountpoint. In this case, it is mounted to <code>/boot</code>, for separation of concerns
+between OS and EFI related files is not wanted:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="w"> </span>bootctl<span class="w"> </span>--path<span class="o">=</span>/boot<span class="w"> </span>install
+</span></code></pre></div>
+<p><img alt="Systemd-boot_install.png" src="../img/Systemd-boot_install.png" /></p>
+<p>Systemd-boot searches for boot menu items. In this specific configuration, in <code>/boot/loader/entries/arch.conf</code>.
+In order to use encryption, the root's UUID (Universally unique identifier) is used to identify such partition.
+It is added to the file, so it is not necessary to manually copy all of those characters:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="k">$(</span>blkid<span class="w"> </span>-s<span class="w"> </span>UUID<span class="w"> </span>-o<span class="w"> </span>value<span class="w"> </span>/dev/sda2<span class="k">)</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/boot/loader/entries/arch.conf
+</span></code></pre></div>
+<p><img alt="UUID_sda2.png" src="../img/UUID_sda2.png" /></p>
+<p>The file is then edited:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>vim<span class="w"> </span>boot/loader/entries/arch.conf<span class="w"> </span>
+</span></code></pre></div>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>title<span class="w"> </span>Arch<span class="w"> </span>Linux
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>linux<span class="w"> </span>/vmlinuz-linux
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>initrd<span class="w"> </span>/intel-ucode.img
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>initrd<span class="w"> </span>/initramfs-linux.img
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>options<span class="w"> </span>rd.luks.name<span class="o">=</span>&lt;UUID&gt;<span class="o">=</span>crypt<span class="w"> </span><span class="nv">root</span><span class="o">=</span>/dev/mapper/crypt<span class="w"> </span><span class="nv">rootflags</span><span class="o">=</span><span class="nv">subvol</span><span class="o">=</span>@<span class="w"> </span>rd.luks.options<span class="o">=</span>&lt;UUID&gt;<span class="o">=</span>discard<span class="w"> </span>rw<span class="w"> </span>quiet
+</span></code></pre></div>
+<p><img alt="Archconf.png" src="../img/Archconf.png" /></p>
+<ul>
+<li><code>title</code>: The Operating System name.</li>
+<li><code>linux</code>: EFI program to start. Relative to the EFI System Partition.</li>
+<li><code>initrd</code>: It is used to state kernel parameters. </li>
+<li><code>options</code>: Options to pass to the EFI program or kernel parameters.</li>
+</ul>
+<p>Since this is a linux only boot, <code>linux</code> can be used instead of <code>efi</code>. The syntax differs in both cases.</p>
+<p>The loader configurations is found in <code>/boot/loader/loader.conf</code>:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>vim<span class="w"> </span>/boot/loader/loader.conf
+</span></code></pre></div>
+<p>The following configuration is added:</p>
+<p><img alt="Loaderconf_config.png" src="../img/Loaderconf_config.png" /></p>
+<h2 id="reboot">Reboot</h2>
+<p>It is required to type <code>exit</code> or press <code>Ctrl+d</code> to exit the chroot environment:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="nb">exit</span>
+</span></code></pre></div>
+<p>Even though it is not a must, the used partitions may be manually unmounted.</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>umount<span class="w"> </span>-R<span class="w"> </span>/mnt
+</span></code></pre></div>
+<p>The following command restarts the machine:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>reboot
+</span></code></pre></div>
+<p><img alt="Preparing_reboot.png" src="../img/Preparing_reboot.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Pre-Install">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Pre-Install
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../post-install/" class="md-footer__link md-footer__link--next" aria-label="Next: Post-Install">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Post-Install
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Licensed under the GNU General Public License v3.0
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/jvanjeddz/archmoured" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.footer", "header.autohide", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+    
+  </body>
+</html>
